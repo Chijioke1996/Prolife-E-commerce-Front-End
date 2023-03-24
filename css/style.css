@@ -76,6 +76,23 @@ a {
     font-family: 'Alkatra', cursive;
 }
 
+.let-dress.active {
+
+    display: none;
+}
+
+.let-dress2 {
+    margin-top: 154px;
+    margin-left: 200px;
+    font-size: 2.5rem;
+    font-family: 'Alkatra', cursive;
+    display: none;
+}
+
+.let-dress2.active {
+    display: block;
+}
+
 
 
 /* RESPONSIVE CODEBASE */
