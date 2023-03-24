@@ -144,6 +144,8 @@ a {
     .intro .dynamic-text .let-dress {
         text-align: center;
         font-size: 1.5rem;
+        margin-top: -10px;
+        margin-left: -40px;
 
         
         position: relative;
