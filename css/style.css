@@ -137,9 +137,8 @@ a {
 
 
     .dynamic-text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        position: relative;
+        text-align: center;
         
 
 
@@ -150,8 +149,9 @@ a {
         margin-top: 154px;
         font-size: 1.5rem;
         font-family: 'Alkatra', cursive;
-        justify-content: center;
-        align-items: center;
+        position: absolute;
+       text-align: center;
+       
 
 
     }
