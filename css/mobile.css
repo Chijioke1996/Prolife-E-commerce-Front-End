@@ -1,0 +1,8 @@
+@media screen and (max-width: 900px){
+    #navbar ul{
+        display: none;
+        align-items:center ;
+        list-style: none;
+    }
+     
+}
