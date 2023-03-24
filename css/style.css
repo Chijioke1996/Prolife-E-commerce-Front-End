@@ -135,26 +135,20 @@ a {
 
     }
 
+    .intro {
 
-    .dynamic-text {
         position: relative;
-        text-align: center;
-        
-
-
-        
     }
 
-    .let-dress {
-        margin-top: 154px;
+
+    .intro .dynamic-text .let-dress {
+        text-align: center;
         font-size: 1.5rem;
-        font-family: 'Alkatra', cursive;
-        position: absolute;
-       text-align: center;
-       
 
-
+        
+        position: relative;
     }
 
 
 }
+
