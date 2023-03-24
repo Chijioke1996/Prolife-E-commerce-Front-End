@@ -141,17 +141,19 @@ a {
         justify-content: center;
         align-items: center;
         
-       
 
+
+        
     }
 
     .let-dress {
         margin-top: 154px;
-        
         font-size: 1.5rem;
         font-family: 'Alkatra', cursive;
-        
-       
+        justify-content: center;
+        align-items: center;
+
+
     }
 
 
