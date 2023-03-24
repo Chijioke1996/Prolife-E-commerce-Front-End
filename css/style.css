@@ -160,16 +160,19 @@ a {
     .dynamic-text {
         margin-top: -10%;
         margin-left: -45%;
+        position: relative;
     }
 
 
     .intro .dynamic-text .let-dress {
         text-align: center;
         font-size: 1.5rem;
+        margin-top: -10%;
+        margin-left: -45%;
        
 
         
-        position: relative;
+      
     }
 
 
