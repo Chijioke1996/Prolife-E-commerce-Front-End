@@ -93,6 +93,54 @@ a {
     display: block;
 }
 
+.text-white {
+    color: white;
+}
+
+.catalogue {
+   position: relative;
+   margin-top: 50px;
+   display: flex;
+   justify-content: center;
+}
+
+.search-parent {
+    
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.catalogue .search {
+    width: 360px;
+    height: 45px;
+    border: 3px solid #333;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-left: 12px;
+}
+
+.catalogue .search:focus {
+   border: #a5d86a;
+}
+
+.catalogue .search-btn:focus {
+   
+   color: white;
+}
+
+.catalogue .search-btn {
+    width: 100px;
+    height: 45px;
+    border: 2px solid #333;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 20px;
+    background: #a5d86a;
+    cursor: pointer;
+    
+}
+
 
 
 /* RESPONSIVE CODEBASE */
@@ -169,12 +217,11 @@ a {
         font-size: 1.5rem;
         margin-top: -10%;
         margin-left: -45%;
-      
-      
+
+
     }
 
     .intro .dynamic-text .let-dress2 {
-        text-align: center;
         font-size: 1.5rem;
         margin-top: -10%;
         margin-left: -50%;
@@ -182,4 +229,3 @@ a {
 
 
 }
-
