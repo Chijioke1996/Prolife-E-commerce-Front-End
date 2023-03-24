@@ -161,6 +161,7 @@ a {
         margin-top: -10%;
         margin-left: -45%;
         position: relative;
+        padding: 0 0.75rem;
     }
 
 
@@ -178,7 +179,7 @@ a {
         font-size: 1.5rem;
         margin-top: -10%;
         margin-left: -45%;
-        padding: 0 0.75rem;
+       
       
     }
 
