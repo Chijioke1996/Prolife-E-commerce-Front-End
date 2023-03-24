@@ -1,16 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.4 ;
+    line-height: 1.4;
     height: 100Vh;
 }
 
-#navbar{
+#navbar {
     position: sticky;
     top: 0;
     display: flex;
@@ -21,24 +21,25 @@ body{
     z-index: 1;
 }
 
-#navbar ul{
+#navbar ul {
     display: flex;
-    align-items:center ;
+    align-items: center;
     list-style: none;
 }
 
-#navbar ul li a{
-  color: #fff;
-  padding: 0.75rem;
-  margin: 0 0.25rem;
+#navbar ul li a {
+    color: #fff;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
 }
 
-#navbar ul li a:hover,#navbar ul li a.current{
- background: #93cb52;
- border-radius: 5px;
+#navbar ul li a:hover,
+#navbar ul li a.current {
+    background: #93cb52;
+    border-radius: 5px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -52,19 +53,42 @@ a{
 
 /* UTILITY */
 
-.txt-prmy{
+.txt-prmy {
     color: #93cb52;
 }
 
+/* SECTION CODE */
+.intro {
+    height: 400px;
+    background: #a5d86a;
+    position: relative;
+}
 
-@media screen and (max-width: 900px){
+.dynamic-text {
+    display: flex;
+
+}
+
+.let-dress {
+    margin-top: 154px;
+    margin-left: 200px;
+    font-size: 2.5rem;
+    font-family: 'Alkatra', cursive;
+}
+
+
+
+/* RESPONSIVE CODEBASE */
+
+@media screen and (max-width: 900px) {
     #navbar {
         /* max-width: 900px; */
-        
+
     }
-    #navbar ul{
+
+    #navbar ul {
         display: none;
-        align-items:center ;
+        align-items: center;
         list-style: none;
     }
 
@@ -86,34 +110,49 @@ a{
         z-index: 1;
     }
 
-    #footer #navbar ul{
+    #footer #navbar ul {
         display: flex;
-        align-items:center ;
+        align-items: center;
         list-style: none;
     }
 
-    #footer #navbar ul li a{
+    #footer #navbar ul li a {
         color: #fff;
         padding: 0.75rem;
         margin: 0 0.25rem;
-      }
+    }
 
-    #footer #navbar ul li a .icon{
+    #footer #navbar ul li a .icon {
         color: #fff;
         height: 40px;
         width: 40px;
-      }
+    }
 
-      #footer #navbar ul li a .icon:hover,#navbar ul li a.current{
+    #footer #navbar ul li a .icon:hover,
+    #navbar ul li a.current {
         color: #93cb52;
         background: #333;
-        
-       }
 
+    }
+
+
+    .dynamic-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
        
 
-   
+    }
+
+    .let-dress {
+        margin-top: 154px;
+        margin-left: 200px;
+        font-size: 2.5rem;
+        font-family: 'Alkatra', cursive;
+        
+       
+    }
+
 
 }
-
-
