@@ -350,7 +350,7 @@ a {
 
     .card .pic {
         /* margin-left: 7px; */
-        margin-top: 34px;
+        margin-top: 16px;
         height: 270px;
         width: 90%;
         border-radius: 7px;
@@ -367,12 +367,12 @@ a {
     }
 
     .para {   
-        margin-left: 34px;
+        margin-left: 15px;
         margin-top: 5px;
     }
 
     .add-cart {
-        margin-left: 34px;
+        margin-left: 15px;
         margin-top: 15px;
 
     }
