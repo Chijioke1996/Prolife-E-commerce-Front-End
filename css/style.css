@@ -247,7 +247,8 @@ a {
 
     #footer #navbar {
         position: sticky;
-        margin-top: 100vh;
+        bottom: 0;
+        
         display: flex;
         background: #333;
         color: #fff;
