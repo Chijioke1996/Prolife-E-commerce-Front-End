@@ -93,7 +93,7 @@ a {
     justify-content: center;
     align-content: center;
     width: 350px;
-    height: 400px;
+    height: 470px;
     background-color: rgb(151, 147, 147);
     border-radius: 7px;
     margin:100px auto ;
@@ -117,6 +117,26 @@ a {
     border-radius: 5px;
     height: 40px;
     padding: 10px;
+    border: none;
+    
+}
+
+#merchant-name:focus {
+   border: 1px solid #93cb52;
+}
+
+#price-name:focus {
+   border: 1px solid #93cb52;
+}
+
+#price {
+    
+    width: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px;
+    border: none;
     
 }
 
@@ -128,6 +148,8 @@ a {
     border-radius: 5px;
     padding: 10px;
 }
+
+
 
 #upload {
    margin-top: 15px;
@@ -170,7 +192,8 @@ a {
 
     #footer #navbar {
         position: sticky;
-        margin-top: 100vh;
+        bottom: 0;
+        
         display: flex;
         background: #333;
         color: #fff;
