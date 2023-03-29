@@ -31,6 +31,16 @@ body {
     color: #fff;
     padding: 0.75rem;
     margin: 0 0.25rem;
+    padding-right: 20px;
+}
+
+#navbar .bell-bell {
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    /* margin-left: 900px; */
+    position: absolute;
+    margin-left: 30%;
 }
 
 #navbar ul li a:hover,
@@ -232,6 +242,15 @@ a {
 
     }
 
+    #navbar .bell-bell {
+        color: #fff;
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        margin-left: -12%;
+
+    }
+
     #navbar ul {
         display: none;
         align-items: center;
@@ -248,7 +267,7 @@ a {
     #footer #navbar {
         position: sticky;
         bottom: 0;
-        
+
         display: flex;
         background: #333;
         color: #fff;
@@ -304,7 +323,7 @@ a {
         font-size: 1.5rem;
         margin-top: -10%;
         margin-left: -45%; */
-        
+
         justify-content: center;
         align-items: center;
 
@@ -317,7 +336,7 @@ a {
         margin-left: -55%; */
         justify-content: center;
         align-items: center;
-        
+
     }
 
     .catalogue .search {
@@ -373,13 +392,13 @@ a {
 
 
     .card .description {
-        margin-top: 10px; 
+        margin-top: 10px;
         height: 4px;
         width: 90%;
         border-radius: 4px;
     }
 
-    .para {   
+    .para {
         margin-left: 16px;
         margin-top: 5px;
     }
