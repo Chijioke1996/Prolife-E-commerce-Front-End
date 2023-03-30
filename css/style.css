@@ -272,7 +272,7 @@ a {
         background: #333;
         color: #fff;
         justify-content: center;
-        padding: 1rem;
+        padding: 0.5rem;
         z-index: 1;
     }
 
@@ -290,8 +290,8 @@ a {
 
     #footer #navbar ul li a .icon {
         color: #fff;
-        height: 40px;
-        width: 40px;
+        height: 35x;
+        width: 35px;
     }
 
     #footer #navbar ul li a .icon:hover,
