@@ -305,8 +305,6 @@ a {
     .reels {
         display: block;
 
-
-
     }
 
     .reel-wrapper ul {
@@ -337,10 +335,27 @@ a {
 
 
     .outer-reel {
-        width: 75px;
-        height: 75px;
+        width: calc(75px + 0.1rem);
+        height: calc(75px + 0.1rem);
         border-radius: 50%;
-        background-color: #333;
+        background-color: #93cb52;
+
+    }
+
+    .inner-reel {
+        width: 68px;
+        height: 68px;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 4px auto;
+        background: url(/pic3.avif);
+        background-size: cover;
+        background-position: center;
+        /* background-repeat: no-repeat; */
+        
 
     }
 
@@ -506,5 +521,26 @@ a {
         display: none;
     }
 
+
+}
+
+
+@media screen and (width <= 470px) {
+   
+
+    #navbar .bell-bell {
+        color: #fff;
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        margin-left: -12%;
+
+    }
+
+    #navbar .circle-notify {
+        position: absolute;
+        margin-left: calc(74% + 2.5rem);
+        margin-top: -3px;
+    }
 
 }
