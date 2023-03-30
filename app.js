@@ -11,6 +11,26 @@ container.addEventListener("mouseleave", () => {
     texts1.classList.remove("active")
 })
 
+
+// FOR NOTIFICATION ON ADDED ITEMS ON CART
+const addItem = document.querySelectorAll(".add-cart")
+const notification_Circle = document.querySelector(".circle-notify")
+const notification_counter = document.querySelector(".num")
+
+let counter = 0
+addItem.forEach((button) => {
+    button.addEventListener("click", () => {
+        notification_Circle.classList.add("active")
+
+        counter++
+        notification_counter.textContent = counter
+    })
+
+
+})
+
+// TO POPULATE THE GRID TEMPLATE AND SEARCH ITEMS
+
 const cardTemplate = document.querySelector("[data-template]")
 const userContainer = document.querySelector("[data-usercard-container]")
 const searchInput = document.querySelector("[data-search]")
