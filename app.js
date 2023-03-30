@@ -53,24 +53,47 @@ searchInput.addEventListener("input", e => {
 })
 
 
-fetch("https://jsonplaceholder.typicode.com/users")
+// fetch("https://jsonplaceholder.typicode.com/users")
+//     .then(res => res.json())
+//     .then(data => {
+//         users = data.map(user => {
+//             const card = cardTemplate.content.cloneNode(true).children[0]
+//             const pic = card.querySelector("[data-pic]")
+//             const description = card.querySelector("[data-description]")
+//             pic.textContent = user.picture
+//             description.textContent = user.description
+//             userContainer.append(card)
+
+//             return { pic: user.picture, description: user.description, element: card }
+
+
+
+
+
+
+
+//         })
+//     })
+
+fetch("https://fakestoreapi.com/products")
     .then(res => res.json())
     .then(data => {
-        users = data.map(user => {
-            const card = cardTemplate.content.cloneNode(true).children[0]
-            const pic = card.querySelector("[data-pic]")
-            const description = card.querySelector("[data-description]")
-            pic.textContent = user.picture
-            description.textContent = user.description
-            userContainer.append(card)
-
-            return { pic: user.picture, description: user.description, element: card }
-
-
-
-
-
-
-
+        let data1 = ""
+        users = data.map(values => {
+            data1+= `
+            <div class="card">
+            <center>
+                <img src="${values.image}" alt="" class="pic">
+            </center>
+            <center>
+                <div class="description" data-description></div>
+            </center>
+            <p class="para" data-para>${values.title}</p>
+            <button type="submit" class="add-cart" data-btn>Add Item</button>
+        </div>
+ 
+            `
         })
+
+        document.querySelector(".item-grid").innerHTML = data1
     })

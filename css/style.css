@@ -223,14 +223,13 @@ a {
 
 .card .pic {
     margin-top: 15px;
-    background: url(/pic1.avif);
+    
     height: 204px;
     width: 90%;
     border-radius: 7px;
     /* border: 2px solid rgb(124, 120, 120); */
     border: 2px solid white;
-    background-position: center;
-    background-size: cover;
+   
 
 
 
@@ -251,7 +250,7 @@ a {
     color: white;
     margin-left: 15px;
     margin-top: 7px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .add-cart {
@@ -304,6 +303,7 @@ a {
 
     .reels {
         display: block;
+       
 
     }
 
@@ -313,6 +313,8 @@ a {
         display: flex;
         overflow-y: auto;
         padding: 20px 0;
+        
+       
     }
 
     .reel-wrapper ul li {
@@ -449,6 +451,7 @@ a {
         width: 270px;
         height: 45px;
         padding-left: 12px;
+        border-color: black;
     }
 
 
@@ -457,6 +460,8 @@ a {
         width: 90px;
         height: 45px;
         font-size: 18px;
+        background: black;
+        color: #fff;
 
     }
 
@@ -483,8 +488,10 @@ a {
         margin-top: 60px;
         min-width: 90%;
         margin: 30px auto;
+        user-select: none;
+        
 
-
+        
 
     }
 
