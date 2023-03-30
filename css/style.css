@@ -337,8 +337,8 @@ a {
 
 
     .outer-reel {
-        width: 90px;
-        height: 90px;
+        width: 75px;
+        height: 75px;
         border-radius: 50%;
         background-color: #333;
 
@@ -391,6 +391,7 @@ a {
 
         position: relative;
         background: #fff;
+        height: 200px;
     }
 
     .dynamic-text {
@@ -429,7 +430,7 @@ a {
     }
 
     .catalogue .search {
-        margin-top: -300px;
+        margin-top: -180px;
         width: 270px;
         height: 45px;
         padding-left: 12px;
@@ -437,7 +438,7 @@ a {
 
 
     .catalogue .search-btn {
-        margin-top: -300px;
+        margin-top: -180px;
         width: 90px;
         height: 45px;
         font-size: 18px;
@@ -450,7 +451,8 @@ a {
         justify-content: center;
         flex-direction: column;
         /* margin: 20px 2%; */
-        margin: -120px auto;
+        margin: 30px auto;
+        margin-top: -90px;
 
     }
 
