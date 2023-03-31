@@ -53,7 +53,7 @@ fetch("https://fakestoreapi.com/products")
             data1 += `
         <div class="card">
           <center>
-            <img src="${user.image}" alt="" class="pic">
+          <a href="full_description.html"><img src="${user.image}" alt="" class="pic"></a>
           </center>
           <center>
             <div class="description" data-description></div>
@@ -117,8 +117,11 @@ fetch("https://fakestoreapi.com/products")
 
         })
 
+      
+
 
     })
+    // END OF DOT THEN
     .catch(error => {
         console.log(error);
     })
