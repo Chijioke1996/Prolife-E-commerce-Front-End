@@ -23,14 +23,19 @@ body {
 
 }
 
-.close {
+a .close {
     height: 35px;
     width: 35px;
     color: white;
     position: relative;
-    left: 40%;
-    top: -14%;
+    left: 420%;
+    top: -200%;
+    
    
+}
+
+.close:hover {
+    color: black;
 }
 
 .pict {
@@ -107,8 +112,22 @@ span {
 
     .close {
 
-        left: 36%;
-        top: -20%;
+        margin-left: 20px;
+        margin-top: 20px;
+       
+       
+    }
+
+}
+
+
+@media screen and (300px > width <= 570px) {
+ 
+
+    .close {
+       
+        
+        
        
     }
 
