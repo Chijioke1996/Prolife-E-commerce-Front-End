@@ -264,7 +264,7 @@ a {
     cursor: pointer;
 }
 
-.hide {
+.card.hide {
     display: none;
 }
 

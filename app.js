@@ -31,26 +31,31 @@ addItem.forEach((button) => {
 
 // TO POPULATE THE GRID TEMPLATE AND SEARCH ITEMS
 
-const cardTemplate = document.querySelector("[data-template]")
-const userContainer = document.querySelector("[data-usercard-container]")
-const searchInput = document.querySelector("[data-search]")
-
-let users = []
-
-searchInput.addEventListener("input", e => {
-    const Value = e.target.value.toLowerCase()
+// const cardTemplate = document.querySelector("[data-template]")
+// const userContainer = document.querySelector("[data-usercard-container]")
 
 
 
-    users.forEach(user => {
-        const isVisible =
-            user.name.toLowerCase().includes(Value) ||
-            user.email.toLowerCase().includes(Value)
-        user.element.classList.toggle("hide", !isVisible)
 
 
-    })
-})
+
+
+
+
+// searchBtn.addEventListener("click", e => {
+//     const Value = e.target.value.toLowerCase()
+
+
+
+//     users.forEach(values => {
+//         const isVisible =
+//             values.title.toLowerCase().includes(Value) ||
+//             values.description.toLowerCase().includes(Value)
+//             values.element.classList.toggle("hide", !isVisible)
+
+
+//     })
+// })
 
 
 // fetch("https://jsonplaceholder.typicode.com/users")
@@ -75,25 +80,56 @@ searchInput.addEventListener("input", e => {
 //         })
 //     })
 
+
+let users = []
+
 fetch("https://fakestoreapi.com/products")
     .then(res => res.json())
     .then(data => {
+        users = data.map(values => values)
+
         let data1 = ""
-        users = data.map(values => {
-            data1+= `
-            <div class="card">
-            <center>
-                <img src="${values.image}" alt="" class="pic">
-            </center>
-            <center>
-                <div class="description" data-description></div>
-            </center>
-            <p class="para" data-para>${values.title}</p>
-            <button type="submit" class="add-cart" data-btn>Add Item</button>
-        </div>
- 
-            `
+        users.forEach(user => {
+            data1 += `
+        <div class="card">
+          <center>
+            <img src="${user.image}" alt="" class="pic">
+          </center>
+          <center>
+            <div class="description" data-description></div>
+          </center>
+          <p class="para" data-para>${user.title}</p>
+          <button type="submit" class="add-cart" data-btn>Add Item</button>
+        </div>`
         })
 
         document.querySelector(".item-grid").innerHTML = data1
+        // Add event listener to search button
+        const searchBtn = document.querySelector(".search-btn")
+        searchBtn.addEventListener("click", () => {
+            // Get search term from input field
+            const searchTerm = document.querySelector(".search").value.trim().toLowerCase()
+
+            // Show only filtered cards
+            const filteredUsers = users.filter(user => user.title.toLowerCase().includes(searchTerm))
+            const cards = document.querySelectorAll(".card")
+            cards.forEach(card => {
+                const cardElem = card.querySelector(".card p[data-para]")
+                if (cardElem && filteredUsers.some(user => user.title === cardElem.textContent)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        });
+
+
+
     })
+    .catch(error => {
+        console.log(error);
+    })
+
+
+
+
