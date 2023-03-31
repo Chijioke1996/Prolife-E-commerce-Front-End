@@ -12,29 +12,13 @@ container.addEventListener("mouseleave", () => {
 })
 
 
-// FOR NOTIFICATION ON ADDED ITEMS ON CART
-const addItem = document.querySelectorAll(".add-cart")
-const notification_Circle = document.querySelector(".circle-notify")
-const notification_counter = document.querySelector(".num")
-
-let counter = 0
-addItem.forEach((button) => {
-    button.addEventListener("click", () => {
-        notification_Circle.classList.add("active")
-
-        counter++
-        notification_counter.textContent = counter
-    })
 
 
-})
 
 // TO POPULATE THE GRID TEMPLATE AND SEARCH ITEMS
 
 // const cardTemplate = document.querySelector("[data-template]")
 // const userContainer = document.querySelector("[data-usercard-container]")
-
-
 
 
 // fetch("https://jsonplaceholder.typicode.com/users")
@@ -81,6 +65,9 @@ fetch("https://fakestoreapi.com/products")
         document.querySelector(".item-grid").innerHTML = data1
 
 
+        // N/B: NOTE ALMOST EVERYTHIG IS HAPPENING INSIDE THE FETCH API SINCE IT'S WHAT POPULATES THE SITE
+
+
         // <<<<<<<<<< SEARCHING WITH INPUT >>>>>>>>>>>>>>>>>>>>>>>>>
         // In this BELOW code, we use querySelector to find the first p element within the card 
         // that has a data-para attribute. We then check if that element exists, and if it does, 
@@ -109,10 +96,32 @@ fetch("https://fakestoreapi.com/products")
         });
 
 
+        // <<<<<<<<<< "ADD ITEM" BUTTON >>>>>>>>>>>
+
+        // FOR NOTIFICATION ON ADDED ITEMS ON CART
+        const addItem = document.querySelectorAll(".add-cart")
+        const notification_Circle = document.querySelector(".circle-notify")
+        const notification_counter = document.querySelector(".num")
+
+        let counter = 0
+        addItem.forEach((button) => {
+            button.addEventListener("click", () => {
+                notification_Circle.classList.add("active")
+
+                counter++
+                notification_counter.textContent = counter
+            })
+
+
+        })
+
+
     })
     .catch(error => {
         console.log(error);
     })
+
+
 
 
 
