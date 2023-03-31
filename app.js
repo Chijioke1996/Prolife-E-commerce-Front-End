@@ -37,27 +37,6 @@ addItem.forEach((button) => {
 
 
 
-
-
-
-
-
-// searchBtn.addEventListener("click", e => {
-//     const Value = e.target.value.toLowerCase()
-
-
-
-//     users.forEach(values => {
-//         const isVisible =
-//             values.title.toLowerCase().includes(Value) ||
-//             values.description.toLowerCase().includes(Value)
-//             values.element.classList.toggle("hide", !isVisible)
-
-
-//     })
-// })
-
-
 // fetch("https://jsonplaceholder.typicode.com/users")
 //     .then(res => res.json())
 //     .then(data => {
@@ -70,10 +49,6 @@ addItem.forEach((button) => {
 //             userContainer.append(card)
 
 //             return { pic: user.picture, description: user.description, element: card }
-
-
-
-
 
 
 
@@ -104,6 +79,16 @@ fetch("https://fakestoreapi.com/products")
         })
 
         document.querySelector(".item-grid").innerHTML = data1
+
+
+        // <<<<<<<<<< SEARCHING WITH INPUT >>>>>>>>>>>>>>>>>>>>>>>>>
+        // In this BELOW code, we use querySelector to find the first p element within the card 
+        // that has a data-para attribute. We then check if that element exists, and if it does, 
+        // we check if its text content matches the title of any of the filtered users. 
+        // If there's a match, we show the card, and if not, we hide it.
+
+
+
         // Add event listener to search button
         const searchBtn = document.querySelector(".search-btn")
         searchBtn.addEventListener("click", () => {
@@ -124,11 +109,12 @@ fetch("https://fakestoreapi.com/products")
         });
 
 
-
     })
     .catch(error => {
         console.log(error);
     })
+
+
 
 
 
