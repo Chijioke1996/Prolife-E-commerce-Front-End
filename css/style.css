@@ -268,6 +268,22 @@ a {
     display: none;
 }
 
+.square {
+    margin-left: 195px;
+    margin-top: -28px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 28px;
+    width: 70px;
+    cursor: pointer;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 /* RESPONSIVE CODEBASE */
@@ -528,6 +544,12 @@ a {
         display: none;
     }
 
+    .square {
+        margin-left: 82%;
+        margin-top: -28px;
+        
+    }
+
 
 }
 
@@ -550,4 +572,12 @@ a {
         margin-top: -3px;
     }
 
+    .square {
+        margin-left: 74%;
+        margin-top: -28px;
+        
+    }
+
+
 }
+

@@ -45,6 +45,7 @@ let users = []
 fetch("https://fakestoreapi.com/products")
     .then(res => res.json())
     .then(data => {
+        console.log(data);
         users = data.map(values => values)
 
         let data1 = ""
@@ -59,6 +60,7 @@ fetch("https://fakestoreapi.com/products")
           </center>
           <p class="para" data-para>${user.title}</p>
           <button type="submit" class="add-cart" data-btn>Add Item</button>
+          <div class="square">${user.price}</div>
         </div>`
         })
 
