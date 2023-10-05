@@ -8,6 +8,7 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.4;
     height: 100Vh;
+    width: 100%;
 }
 
 #navbar {
@@ -61,6 +62,7 @@ a {
 
 #account-content {
     position: relative;
+    height: 1200px;
 }
 
 .user-name {
@@ -92,11 +94,12 @@ a {
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 370px;
-    height: 470px;
-    background-color: rgb(151, 147, 147);
+    max-width: calc(100% - 30%);
+    min-height: 470px;
+    /* background-color: rgb(151, 147, 147); */
+    background-color: black;
     border-radius: 7px;
-    margin:100px auto ;
+    margin: 100px auto ;
     border: 1px solid black;
 
 
@@ -129,7 +132,7 @@ a {
    border: 1px solid #93cb52;
 }
 
-#price {
+/* #price {
     
     width: 300px;
     margin-top: 10px;
@@ -147,6 +150,11 @@ a {
     height: 50px;
     border-radius: 5px;
     padding: 10px;
+} */
+
+#form-data {
+    width: 480px;
+    height: 35px;
 }
 
 
@@ -162,6 +170,7 @@ a {
     border: 1px solid #93cb52;
     background-color: #93cb52;
     cursor: pointer;
+    margin-bottom: 100px;
 }
 
 
@@ -241,6 +250,24 @@ a {
         position: absolute;
 
 
+    }
+
+    .form-container {
+    
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        max-width: calc(100% - 10%);
+        min-height: 470px;
+        margin: 100px auto ;
+     
+    
+    
+    }
+
+    #form-data {
+        width: calc(100% - 10px);
+        height: 35px;
     }
 
 
